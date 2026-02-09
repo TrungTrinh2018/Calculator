@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: sans-serif;
+}
+
+.calculator {
+  background-color: #eeeeee;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.display {
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 36px;
+  text-align: right;
+  padding: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  cursor: pointer;
+  padding: 15px 0;
+  transition: background-color 0.2s;
+  flex: 1 1 calc(25% - 10px);
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.btn-double {
+  flex: 2 1 calc(50% - 10px);
+}
+
+.btn:hover {
+  filter: brightness(95%);
+}
+
+.btn:active {
+  filter: brightness(90%);
+}
+
+.btn-grey {
+  background-color: #dddddd;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0; /* Add a subtle border for white buttons */
+}
+
+.btn-yellow {
+  background-color: #fdd835;
+}
+
+/* Specific adjustment for the x^y button */
+.btn sup {
+  font-size: 0.7em;
+}
